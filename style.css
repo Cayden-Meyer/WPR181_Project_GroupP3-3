@@ -2,6 +2,7 @@
 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
     margin: 0;  
     width: 100%;
     text-align: center;
@@ -25,19 +26,40 @@ body
     background-color: black;
     color: white;
 }
+footer
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 2px solid black;
+    padding-top: 20px;
+}
+#contactdetails
+{
+    grid-column: 1;
+    grid-row: 1;
+}
+#rights
+{
+    grid-column: 3;
+    grid-row: 1;
+}
 #home
 {
     grid-column: 1;
+    grid-row: 1;
 }
 #portfolio
 {
     grid-column: 3;
+    grid-row: 1;
 }
 #contact
 {
     grid-column: 4;
+    grid-row: 1;
 }
 #services
 {
     grid-column: 2;
+    grid-row: 1;
 }
