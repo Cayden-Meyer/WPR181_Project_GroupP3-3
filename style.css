@@ -1,9 +1,11 @@
-#nav
+#navbar
 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 0;  
     width: 100%;
+    text-align: center;
+    column-gap: 5px;
 }
 body
 {
@@ -12,12 +14,30 @@ body
 #home, #portfolio, #contact, #services
 {
     border: 1px solid black;
-    border-radius: 30%;
+    border-radius: 15%;
     padding: 10px;
     font-size: 15px;
+    text-decoration: none;
+    color: black;
 }
 #home:hover, #portfolio:hover, #contact:hover, #services:hover
 {
     background-color: black;
     color: white;
+}
+#home
+{
+    grid-column: 1;
+}
+#portfolio
+{
+    grid-column: 3;
+}
+#contact
+{
+    grid-column: 4;
+}
+#services
+{
+    grid-column: 2;
 }
