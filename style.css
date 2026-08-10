@@ -1,12 +1,12 @@
 #navbar
 {
     display: grid;
+    max-width: 100%;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 30px ;
     margin: 0;  
-    width: 100%;
     text-align: center;
-    column-gap: 5px;
+    column-gap: 2%;
 }
 body
 {
@@ -16,6 +16,7 @@ body
 {
     border: 1px solid black;
     border-radius: 15%;
+    background-color: lightgrey;
     padding: 10px;
     font-size: 15px;
     text-decoration: none;
@@ -37,6 +38,7 @@ footer
 {
     grid-column: 1;
     grid-row: 1;
+    
 }
 #rights
 {
