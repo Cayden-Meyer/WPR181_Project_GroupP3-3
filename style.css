@@ -27,6 +27,62 @@ body
     background-color: black;
     color: white;
 }
+#ContactContainer
+{
+    display: grid;
+    width: 100%;
+    grid-template-columns: Repeat(3,1fr);
+    grid-template-rows: Repeat(10,minmax(50px,auto));
+    margin: 10px;
+}
+#ContactsHeading 
+{
+    color: Black;
+    grid-column: 2;
+    margin:0;
+    text-align: center;
+    grid-row: 1;
+    font-size: 30pt;
+}
+.Areas
+{
+    color: Black;
+    grid-column: 1;
+    text-align: center;
+    margin-top: 135px;
+}
+Reception, HouseCleaning, CarWashing
+{
+    text-align: center;
+    padding:5px;
+}
+Reception
+{
+    grid-column: 1;
+}
+HouseCleaning
+{
+    grid-column: 2;
+}
+CarWashing
+{
+    grid-column: 3;
+}
+.Areas+img
+{
+    grid-column: 2;
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    border: 2px solid black;
+    margin: 20px; 
+}
+#ContactsDescription
+{
+    grid-row: 2;
+    grid-column: 1/4;
+    margin:0;
+}
 footer
 {
     display: grid;
