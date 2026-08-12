@@ -75,3 +75,58 @@ footer
     grid-column: 6;
     grid-row: 1;
 }
+.nav1
+{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 14px 20px;
+    border-bottom: 2px;
+}
+#navbar2
+{
+    display: flex;
+    gap: 18px;
+}
+.logo
+{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.servicerow
+{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px
+}
+.servicetext
+{
+    width: 55%;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 14px;
+}
+.serviceimage
+{
+    width: 45%;
+    object-fit: cover;
+}
+.image-left
+{
+    order: 1;
+}
+.text-right
+{
+    order: 2;
+}
+.text-left
+{
+    order: 1;
+}
+.image-right
+{
+    order: 2;
+}
