@@ -1,12 +1,15 @@
 #navbar
 {
     display: grid;
-    max-width: 100%;
+    max-width: 50%;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 30px ;
-    margin: 0;  
+    grid-template-rows: 30px ; 
     text-align: center;
     column-gap: 2%;
+    margin: 30px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 body
 {
@@ -21,11 +24,18 @@ body
     font-size: 15px;
     text-decoration: none;
     color: black;
+    margin-top: 20px;
 }
 #home:hover, #portfolio:hover, #contact:hover, #services:hover, #about:hover, #reviews:hover
 {
     background-color: black;
     color: white;
+}
+#companyName
+{
+    grid-column: 1;
+    grid-row:1;
+    margin:0;
 }
 #ContactContainer
 {
@@ -33,7 +43,7 @@ body
     width: 100%;
     grid-template-columns: Repeat(3,1fr);
     grid-template-rows: Repeat(10,minmax(50px,auto));
-    margin: 10px;
+    margin: 40px;
 }
 #ContactsHeading 
 {
@@ -103,32 +113,32 @@ footer
 }
 #home
 {
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 1;
 }
 #portfolio
 {
-    grid-column: 3;
+    grid-column: 4;
     grid-row: 1;
 }
 #contact
 {
-    grid-column: 4;
+    grid-column: 5;
     grid-row: 1;
 }
 #services
 {
-    grid-column: 2;
+    grid-column: 3;
     grid-row: 1;
 }
 #about
 {
-    grid-column: 5;
+    grid-column: 6;
     grid-row: 1;
 }
 #reviews
 {
-    grid-column: 6;
+    grid-column: 7;
     grid-row: 1;
 }
 /* services */
