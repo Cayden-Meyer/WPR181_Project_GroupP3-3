@@ -2,6 +2,7 @@
 {
     display: grid;
     max-width: 50%;
+    height: 100px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 30px ; 
     text-align: center;
@@ -34,8 +35,10 @@ body
 #companyName
 {
     grid-column: 1;
-    grid-row:1;
-    margin:0;
+    grid-row: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 #ContactContainer
 {
@@ -96,9 +99,11 @@ CarWashing
 footer
 {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(3, 1fr);
     border-top: 2px solid black;
     padding-top: 20px;
+
 }
 #contactdetails
 {
