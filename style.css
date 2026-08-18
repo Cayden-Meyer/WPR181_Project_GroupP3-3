@@ -2,7 +2,7 @@
 {
     display: flex;
     max-width: 100%;
-    margin: 0;  
+    margin: auto;  
     text-align: center;
     align-items: center;         
     justify-content: center;
@@ -342,4 +342,74 @@ iframe
     background-color: whitesmoke; 
 }
 
+@media (max-width: 992px)
+{
+    .nav-links
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(20px, auto);
+        text-align: center;
+        margin: auto;
+    }
+
+    #home
+    {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #portfolio
+    {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    #contact
+    {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #services
+    {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #about
+    {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #reviews
+    {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    #home, #portfolio, #contact, #services, #about, #reviews
+    {
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        color:rgb(72, 168, 239);
+        padding-top: 5%;
+    }
+
+    .container
+    {
+        padding: 5% 5%
+    }
+
+    .image img
+    {
+        object-position: bottom;
+    }
+}
+@media (min-width: 992px)
+{
+
+}
 
