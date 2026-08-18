@@ -412,12 +412,8 @@ iframe
 {
 
 }
-/* ==========================================================
-   ADDED: REVIEWS PAGE SPECIFIC STYLES (ISOLATED)
-   ========================================================== */
 
-/* This only affects the <main> tag on the reviews page */
-main #reviews-page {
+main#reviews-page {
     padding: 50px 8%;
     text-align: center;
 }
@@ -428,7 +424,6 @@ main #reviews-page {
     color: #222;
 }
 
-/* Review cards - now 100% safe from breaking other pages */
 #reviews-page .review {
     position: relative;
     display: inline-block;
@@ -458,6 +453,7 @@ main #reviews-page {
     border-radius: 50%;
     border: 2px solid #1248bd54;
     margin-bottom: 15px;
+    display: inline-block;
 }
 
 /* Client names */
@@ -476,7 +472,7 @@ main #reviews-page {
 
 #reviews-page .review p {
     color: slateblue;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #reviews-page .semiheading {
