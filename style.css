@@ -72,10 +72,11 @@ body
 #ContactContainer
 {
     display: grid;
-    width: 100%;
+    width: 80%;
     grid-template-columns: Repeat(3,1fr);
     grid-template-rows: Repeat(4,minmax(50px,auto));
-    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 #ContactsHeading 
 {
@@ -92,6 +93,8 @@ body
     grid-column: 1;
     text-align: center;
     margin-top: 19%;
+    font-size: 30pt;
+    text-decoration: underline;
 }
 Reception, HouseCleaning, CarWashing
 {
@@ -122,20 +125,34 @@ span
     padding-bottom: 20px;
 }
 
+#contactHeadingSpan
+{
+    background-color: lightblue;
+    border-radius: 10% 10% 0% 0%;
+}
+
+#contactFirstSpan
+{
+    background-color: lightblue;
+    border-radius: 0 0 2% 2% ;
+}
+
 .evenContactSpan
 {
     background-color: lightblue;
+    border-radius: 2%;
 }
 
 .oddContactSpan
 {
     background-color: white;
+    border-radius: 5%;
 }
 .Areas+img
 {
     grid-column: 2;
     text-align: center;
-    width: 400px;
+    width: 500px;
     height: 250px;
     border: 3px solid rgb(72, 168, 239);
     border-radius: 20%;
