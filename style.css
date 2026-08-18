@@ -74,7 +74,7 @@ body
     display: grid;
     width: 100%;
     grid-template-columns: Repeat(3,1fr);
-    grid-template-rows: Repeat(10,minmax(50px,auto));
+    grid-template-rows: Repeat(4,minmax(50px,auto));
     margin: 10px;
 }
 #ContactsHeading 
@@ -91,7 +91,7 @@ body
     color: Black;
     grid-column: 1;
     text-align: center;
-    margin-top: 135px;
+    margin-top: 19%;
 }
 Reception, HouseCleaning, CarWashing
 {
@@ -101,14 +101,35 @@ Reception, HouseCleaning, CarWashing
 Reception
 {
     grid-column: 1;
+    padding-top: 20px;
 }
 HouseCleaning
 {
     grid-column: 2;
+    padding-top: 20px;
 }
 CarWashing
 {
     grid-column: 3;
+    padding-top: 20px;
+}
+span
+{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.evenContactSpan
+{
+    background-color: lightblue;
+}
+
+.oddContactSpan
+{
+    background-color: white;
 }
 .Areas+img
 {
@@ -116,29 +137,41 @@ CarWashing
     text-align: center;
     width: 400px;
     height: 250px;
-    border: 2px solid black;
-    margin: 20px; 
+    border: 3px solid rgb(72, 168, 239);
+    border-radius: 20%;
+    margin: auto; 
+    box-shadow: 3px 3px 3px rgba(54, 125, 180, 0.664);
 }
 #ContactsDescription
 {
     grid-row: 2;
     grid-column: 1/4;
-    margin:0;
+    margin:auto;
+    text-align: center;
 }
 
- footer {
-            background-color: rgb(12, 72, 118);
-            color: white;
-            text-align: center;
-            padding: 20px;
-            width: 100%;
-        }
+ footer 
+{
+    background-color: rgb(12, 72, 118);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
 #contactdetails
 {
     grid-column: 1;
     grid-row: 1;
     
 }
+iframe
+{
+    grid-column: 3;
+    text-align: center;
+    margin:auto;
+    border-radius: 10%;
+}
+
 #rights
 {
     grid-column: 3;
