@@ -469,7 +469,6 @@ iframe
         grid-column: 1/3;
         margin: auto;
         height: 9rem;
-        border: 2px solid black;
     }
 
 }
@@ -482,6 +481,31 @@ iframe
     .nav-links a
     {
         font-size: 8pt;
+    }
+
+    .ContactContainer
+    {
+        grid-template-columns: 1fr;
+    }
+
+    CarWashing
+    {
+        grid-column: 1;
+    }
+
+    iframe
+    {
+        grid-column: 1;
+    }
+
+    HouseCleaning
+    {
+        grid-column: 1;
+    }
+
+    .Areas+img
+    {
+        grid-column: 1;
     }
 }
 
