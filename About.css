@@ -1,0 +1,139 @@
+main
+{
+    font-family: georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(245, 251, 252);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 10%;
+}
+
+main section
+{
+    margin-bottom: 60px;
+}
+
+main section h2
+{
+    color: rgb(255, 92, 102);
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+main section p
+{
+    color: rgb(35, 109, 165);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+main section ul,
+main section ol
+{
+    color: rgb(35, 109, 165);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+main section ol li strong
+{
+    color: rgb(255, 205, 58);
+}
+
+.equipment-list
+{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.equipment-list li
+{
+    background-color: white;
+    border-radius: 14px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(79, 157, 194, 0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.equipment-image
+{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid rgb(255, 205, 58);
+}
+
+.equipment-list li span
+{
+    display: block;
+    font-weight: bold;
+    color: rgb(255, 92, 102);
+    font-size: 18px;
+}
+
+#equipment-doc
+{
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 24px;
+    background-color: rgb(255, 92, 102);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+#equipment-doc:hover
+{
+    background-color: rgb(255, 205, 58);
+    color: rgb(35, 109, 165);
+}
+
+@media (max-width: 800px)
+{
+    .equipment-list
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main section h2
+    {
+        font-size: 30px;
+    }
+
+    main section p,
+    main section ul,
+    main section ol
+    {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px)
+{
+    main
+    {
+        padding: 40px 6%;
+    }
+
+    .equipment-list
+    {
+        grid-template-columns: 1fr;
+    }
+}
