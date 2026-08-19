@@ -59,7 +59,7 @@
 /* Needed for footer to fit on page */
 footer
 {
-    width: 101.5% !important;
+    width: 101.0% !important;
 }
 
 /* Media query for screens with less than 992 pixels in width (tablets) */
@@ -91,6 +91,12 @@ footer
     {
         font-size: 16pt;
     }
+
+    /* Needed for footer to fit on page */
+    footer
+    {
+        width: 103.3% !important;
+    }
 }
 
 /* Media query for when screen width is 600 pixels or less (cellphones) */
@@ -108,5 +114,11 @@ footer
     .text 
     {
         font-size: 14pt;
+    }
+
+    /* Needed for footer to fit on page */
+    footer
+    {
+        width: 103.5% !important;
     }
 }
