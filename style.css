@@ -499,6 +499,50 @@ body
         max-height: 5.3rem;
     }
 }
+/*Tarnsitions*/
+@view-transition
+{
+    navigation: auto;
+}
+::view-transition-group(page-content)
+{
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+} 
+::view-transition-old(page-content)
+{
+    animation-name: slide-out;
+}
+::view-transition-new(page-content)
+{
+    animation-name: slide-in;
+}
+main
+{
+    view-transition-name: page-content;
+}
+@keyframes slide-out
+{
+    from
+    {
+        translate: 0;
+    }
+    to
+    {
+        translate: -100vw;
+    }
+}
+@keyframes slide-in
+{
+    from
+    {
+        translate: 100vw;
+    }
+    to
+    {
+        translate: 0;
+    }
+}
 
 
 
