@@ -149,3 +149,174 @@ form fieldset legend h2{
     background-color: #d9435a;
     transform: translateY(-2px);
 }
+
+/* Make review form a grid to order for responsiveness */
+.review_fieldset
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,minmax(10px,auto));
+    justify-content: center;
+}
+#firstname
+{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#firstnamelabel
+{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#lastlame
+{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#lastlamelabel
+{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#email
+{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#emaillabel
+{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#review
+{
+    grid-column: 3;
+    grid-row: 4;
+    width: 17rem;
+}
+
+#reviewlabel
+{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#submit
+{
+    grid-column: 2;
+    grid-row: 5;
+}
+
+@media (max-width: 1164px)
+{
+    .review_fieldset
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #firstname
+    {
+        width: 80%;
+    }
+
+    #lastname
+    {
+        grid-column: 1;
+        grid-row: 4;
+        width: 80%;
+    }
+
+    #email
+    {
+        grid-column: 1;
+        grid-row: 6;
+        width: 80%;
+    }
+
+    #review
+    {
+        grid-column: 1;
+        grid-row: 8;
+        width: 80%;
+}
+
+@media (max-width: 826px)
+{
+    .review_fieldset
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #firstname
+    {
+        grid-column: 1;
+        grid-row: 2;
+        width: 80%;
+    }
+
+    #firstnamelabel
+    {
+        grid-column: 1;
+        grid-row: 1;
+        width: 140px;
+    }
+
+    #lastname
+    {
+        grid-column: 1;
+        grid-row: 4;
+        width: 80%;
+    }
+
+    #lastlamelabel
+    {
+        grid-column: 1;
+        grid-row: 3;
+        width: 140px;
+    }
+
+    #email
+    {
+        grid-column: 1;
+        grid-row: 6;
+        width: 80%;
+    }
+
+    #emaillabel
+    {
+        grid-column: 1;
+        grid-row: 5;
+        width: 140px;
+    }
+
+    #review
+    {
+        grid-column: 1;
+        grid-row: 8;
+        width: 80%;
+    }
+
+    #reviewlabel
+    {
+        grid-column: 1;
+        grid-row: 7;
+        width: 140px;
+    }
+
+    #submit
+    {
+        grid-column: 1;
+        grid-row: 9;
+        width: 140px;
+    }
+    .review-form
+    {
+        padding: 10px 10px;
+    }
+}
