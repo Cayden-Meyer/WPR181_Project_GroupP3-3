@@ -99,6 +99,24 @@ main section ol li strong
     transition: background-color 0.2s ease;
 }
 
+#img1{
+    width: 100px;
+    height: 100px;
+   
+}
+
+#img2{
+    width: 200px;
+    height: 200px;
+   
+}
+
+#img3{
+    width: 100px;
+    height: 100px;
+   
+}
+
 #equipment-doc:hover
 {
     background-color: rgb(255, 205, 58);
