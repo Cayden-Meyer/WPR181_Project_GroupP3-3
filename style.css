@@ -304,34 +304,6 @@ footer
         width: 95%;
     }
 
-
-    /*Home responsiveness changes*/
-    /* Made container a grid instead of a flex to position elements */
-    .container
-    {
-        display: grid;
-        padding: 5% 5%;
-    }
-
-    /* Made content bigger to fit on screen and smaller*/
-    .content
-    {
-        max-width: 100%;
-        padding-right: 0px;
-    }
-    .company-name 
-    {
-        font-size: 20pt;
-    }
-    .tagline 
-    {
-        font-size: 18pt;
-    }
-    .text 
-    {
-        font-size: 16pt;
-    }
-
     /* Services responsiveness changes*/
     /* Container is made into a grid for better positioning */
     .servicerow
@@ -363,13 +335,11 @@ footer
     {
         grid-column: 2;
         grid-row: 2;
-    
     }
     .servicerow > div > ul+P
     {
         grid-column: 1;
-        grid-row: 3;
-    
+        grid-row: 3;  
     }
     .servicetext h3 + p + h3, .servicetext h3 + p + h3 + p
     {
@@ -416,19 +386,6 @@ footer
         margin-left: 0%;
     }
 
-    /* All home page fonts are made smaller*/
-        .company-name 
-    {
-        font-size: 18pt;
-    }
-    .tagline 
-    {
-        font-size: 16pt;
-    }
-    .text 
-    {
-        font-size: 14pt;
-    }
 
     /* Services responsiveness changes*/
     /* Changed grid from 2 columns to 1 to fit all content and changed positions of content */

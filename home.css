@@ -55,3 +55,51 @@
  object-position: right;
 }
 
+/* Media query for screens with lees than 992 pixels in width (tablets) */
+@media(max-width:992px)
+{
+    /*Home responsiveness changes*/
+    /* Made container a grid instead of a flex to position elements */
+    .container
+    {
+        display: grid;
+        padding: 5% 5%;
+    }
+
+    /* Made content bigger to fit on screen and smaller*/
+    .content
+    {
+        max-width: 100%;
+        padding-right: 0px;
+    }
+    .company-name 
+    {
+        font-size: 20pt;
+    }
+    .tagline 
+    {
+        font-size: 18pt;
+    }
+    .text 
+    {
+        font-size: 16pt;
+    }
+}
+
+/* Media query for when screen width is 600 pixels or less (cellphones) */
+@media(max-width:600px)
+{
+    /* All home page fonts are made smaller*/
+    .company-name 
+    {
+        font-size: 18pt;
+    }
+    .tagline 
+    {
+        font-size: 16pt;
+    }
+    .text 
+    {
+        font-size: 14pt;
+    }
+}
