@@ -56,6 +56,12 @@
  object-position: right;
 }
 
+/* Needed for footer to fit on page */
+footer
+{
+    width: 101.5% !important;
+}
+
 /* Media query for screens with less than 992 pixels in width (tablets) */
 @media(max-width:992px)
 {

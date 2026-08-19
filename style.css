@@ -80,7 +80,9 @@ footer
     color: white;
     text-align: center;
     padding: 20px;
-    width: 96%;
+    width: 99.1%;
+    margin-left: -20px;
+    margin-bottom: -10px;
 }
 
 /* Setting of positions of all links in the navbar */
