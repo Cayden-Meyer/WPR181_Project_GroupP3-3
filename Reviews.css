@@ -1,0 +1,151 @@
+/* =========================
+   REVIEWS PAGE
+   ========================= */
+
+main {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+/* Review cards */
+
+.review {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    min-height: 330px;
+    margin: 15px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+
+.review:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* Client photos */
+
+.review img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #1248bd54;
+    margin-bottom: 15px;
+}
+
+/* Client names */
+
+.review h3 {
+    font-size: 22px;
+    margin: 5px 0 10px;
+    color: #333;
+}
+
+/* Stars */
+.stars{
+    color: gold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.review-date{
+    margin-left: 100px;
+    color: #5555558b;
+    font-size: 14px;
+}
+.semiheading {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #555555;
+   
+}
+
+form fieldset legend h2{
+
+    color: #db1630b3;
+}
+
+.review-form {
+    width: 85%;
+    margin: 50px auto;
+    padding: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.review-form legend {
+    padding: 0 15px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #e85b70;
+}
+
+.form-group {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 15px;
+    vertical-align: top;
+}
+
+.form-group label {
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 180px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-group textarea {
+    width: 250px;
+    height: 80px;
+    resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #e85b70;
+    box-shadow: 0 0 8px rgba(232, 91, 112, 0.25);
+}
+
+.review-form button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e85b70;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.review-form button:hover {
+    background-color: #d9435a;
+    transform: translateY(-2px);
+}
