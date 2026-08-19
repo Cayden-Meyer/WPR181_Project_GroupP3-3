@@ -234,9 +234,10 @@ footer
     background-color: whitesmoke; 
 }
 
+/* Media query for screens with lees than 992 pixels in width (tablets) */
 @media (max-width: 992px)
 {
-    /*Navbar and footer*/
+    /*Navbar and footer changes for smaller sizes*/
     .nav-links
     {
         max-width: 80%;
@@ -248,7 +249,6 @@ footer
         margin-left: 5%;
         margin-right: 0;
     }
-
     #navbar
     {
         display: grid;
@@ -262,37 +262,31 @@ footer
         grid-column: 1;
         grid-row: 1;
     }
-
     #portfolio
     {
         grid-column: 3;
         grid-row: 1;
     }
-
     #contact
     {
         grid-column: 1;
         grid-row: 2;
     }
-
     #services
     {
         grid-column: 2;
         grid-row: 1;
     }
-
     #about
     {
         grid-column: 2;
         grid-row: 2;
     }
-
     #reviews
     {
         grid-column: 3;
         grid-row: 2;
     }
-
     #home, #portfolio, #contact, #services, #about, #reviews
     {
         font-size: 20px;
@@ -304,42 +298,42 @@ footer
         margin-right: 20%;
         text-align: center;
     }
-
     footer
     {
         font-size: 10pt;
         width: 95%;
     }
 
-    /*home*/
+
+    /*Home responsiveness changes*/
+    /* Made container a grid instead of a flex to position elements */
     .container
     {
         display: grid;
         padding: 5% 5%;
     }
 
+    /* Made content bigger to fit on screen and smaller*/
     .content
     {
         max-width: 100%;
         padding-right: 0px;
     }
-
     .company-name 
     {
         font-size: 20pt;
     }
-
     .tagline 
     {
         font-size: 18pt;
     }
-
     .text 
     {
         font-size: 16pt;
     }
 
-        /* Services */
+    /* Services responsiveness changes*/
+    /* Container is made into a grid for better positioning */
     .servicerow
     {
         display: grid;
@@ -347,12 +341,7 @@ footer
         grid-template-rows: repeat(2,minmax(0,auto));
     }
 
-    .servicetext h3 ,.servicetext h3 + p 
-    {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
+    /* Text container is made into a grid to position it along with images */
     .servicetext
     {
         display: grid;
@@ -363,12 +352,13 @@ footer
         grid-row: 1/3;
         width: 100%;
     }
+
+    /* Text is positioned in the container */
     .servicerow > div > p
     {
         grid-column: 1;
         grid-row: 2;
     }
-
     .servicerow > div > ul > li
     {
         grid-column: 2;
@@ -386,7 +376,13 @@ footer
         grid-column: 2;
         grid-row: 1;
     }
+    .servicetext h3 ,.servicetext h3 + p 
+    {
+        grid-column: 1;
+        grid-row: 1;
+    }
 
+    /* Image is positioned and styled */
     .serviceimage
     {
         grid-column: 2;
@@ -400,16 +396,17 @@ footer
         bottom: -3rem;
     }
 
+    /* Decrease the padding of row colors */
     .row-red, .row-blue, .row-yellow
     {
         padding-bottom: 3rem;
     }
 
 }
-
+/* Media query for when screen width is 600 pixels or less (cellphones) */
 @media (max-width: 600px)
 {
-    /* Navbar */
+    /* Navbar is made smaller with less padding and margins*/
     .nav-links > a
     {
         font-size: 13pt !important;
@@ -419,49 +416,43 @@ footer
         margin-left: 0%;
     }
 
-    /* Home */
+    /* All home page fonts are made smaller*/
         .company-name 
     {
         font-size: 18pt;
     }
-
     .tagline 
     {
         font-size: 16pt;
     }
-
     .text 
     {
         font-size: 14pt;
     }
 
-    /* Services */
+    /* Services responsiveness changes*/
+    /* Changed grid from 2 columns to 1 to fit all content and changed positions of content */
     .servicerow
     {
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2,minmax(0,auto));
         row-gap: 1rem;
     }
-
     .servicerow > div > ul > li
     {
         grid-column: 1;
         grid-row: 4;  
     }
-
     .servicetext h3 + p + h3
     {
         grid-column: 1;
         grid-row: 3;  
     }
-
     .servicetext h3 + p + h3 + ul + p
     {
         grid-column: 1;
         grid-row: 5;
     }
-
     .servicetext
     {
         display: grid;
@@ -471,7 +462,6 @@ footer
         grid-column: 1;
         grid-row: 1;
     }
-
     .serviceimage
     {
         width: 100%;
@@ -482,6 +472,7 @@ footer
     }
 
     /* Portfolio */
+    /* Changed the 2 columns of images into 1 to fit on smaller screens */
     #grid
     {
         grid-template-columns: 1fr;
@@ -489,13 +480,16 @@ footer
 
 }
 
+/* Media query for when the height of a screen is less than 500 pixels (turned phones) */
 @media (max-height: 550px)
 {
+    /* Decrease the size of the navbar */
     #navbar
     {
         max-height: 5.3rem;
     }
 }
+
 /*Tarnsitions*/
 main {
     animation: slide-in 0.6s ease-out;

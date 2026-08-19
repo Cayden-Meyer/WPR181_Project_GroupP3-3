@@ -150,7 +150,7 @@ form fieldset legend h2{
     transform: translateY(-2px);
 }
 
-/* Make review form a grid to order for responsiveness */
+/* Make review form a grid and set positions of elements in them to increase responsiveness */
 .review_fieldset
 {
     display: grid;
@@ -164,84 +164,74 @@ form fieldset legend h2{
     grid-row: 2;
     width: 90%;
 }
-
 #firstnamelabel
 {
     grid-column: 1;
     grid-row: 1;
 }
-
 #lastname
 {
     grid-column: 2;
     grid-row: 2;
     width: 90%;
 }
-
 #lastnamelabel
 {
     grid-column: 2;
     grid-row: 1;
 }
-
 #email
 {
     grid-column: 3;
     grid-row: 2;
     width: 90%;
 }
-
 #emaillabel
 {
     grid-column: 3;
     grid-row: 1;
 }
-
 #review
 {
     grid-column: 3;
     grid-row: 4;
     width: 90%;
 }
-
 #reviewlabel
 {
     grid-column: 2;
     grid-row: 3;
 }
-
 #submit
 {
     grid-column: 2;
     grid-row: 5;
 }
 
+/* Media query for screens with lees than 992 pixels in width (tablets) */
 @media (max-width: 1164px)
 {
+    /* Made the grid smaller to fit elements more verticaly and order them accordingly*/
     .review_fieldset
     {
         grid-template-columns: 1fr 1fr;
     }
-
     #firstname
     {
         width: 80%;
     }
-
     #lastname
     {
         grid-column: 1;
         grid-row: 4;
         width: 80%;
     }
-
     #email
     {
         grid-column: 1;
         grid-row: 6;
         width: 80%;
     }
-
     #review
     {
         grid-column: 1;
@@ -250,75 +240,66 @@ form fieldset legend h2{
     }
 }
 
+/* Media query for when screen width is 600 pixels or less */
 @media (max-width: 826px)
 {
+    /* Made the grid smaller to fit elements more verticaly and order them accordingly*/
     .review_fieldset
     {
         grid-template-columns: 1fr;
     }
-
     #firstname
     {
         grid-column: 1;
         grid-row: 2;
         width: 80%;
     }
-
     #firstnamelabel
     {
         grid-column: 1;
         grid-row: 1;
-        width: 140px;
     }
-
     #lastname
     {
         grid-column: 1;
         grid-row: 4;
         width: 80%;
     }
-
     #lastlamelabel
     {
         grid-column: 1;
         grid-row: 3;
-        width: 140px;
     }
-
     #email
     {
         grid-column: 1;
         grid-row: 6;
         width: 80%;
     }
-
     #emaillabel
     {
         grid-column: 1;
         grid-row: 5;
-        width: 140px;
     }
-
     #review
     {
         grid-column: 1;
         grid-row: 8;
         width: 80%;
     }
-
     #reviewlabel
     {
         grid-column: 1;
         grid-row: 7;
-        width: 140px;
     }
-
     #submit
     {
         grid-column: 1;
         grid-row: 9;
         width: 140px;
     }
+
+    /* Change padding to fit the form better on smaller screens */
     .review-form
     {
         padding: 10px 10px;
