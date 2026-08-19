@@ -154,4 +154,16 @@ main section ol li strong
     {
         grid-template-columns: 1fr;
     }
+
+    main section p,
+    main section ul,
+    main section ol
+    {
+        font-size: 16px;
+    }
+
+    main section h2
+    {
+        font-size: 26px;
+    }
 }
