@@ -1,0 +1,101 @@
+ /* Styling for grid that hols 2 blocks per row*/
+#grid 
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 48px;
+    width: 80%;
+    margin: auto;
+    justify-items: center;
+}
+/*Styling for blocks that contain image slider and image*/
+.block
+{
+    width: 80%;
+    margin: 0;
+    border: 2px solid black;
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 4px 4px 10px rgba(79, 157, 194, 0.478);
+}
+.block-image
+{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+.block-text
+{
+    padding: 16px 18px;
+}
+.block-footer
+{
+    padding: 16px 4px 4px;
+    background-color: whitesmoke;
+}
+/*Slider which contains image and ensures images arent cropped in the snap*/
+.block-slider
+{
+    width: 100%;
+    aspect-ratio: 4/3;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    border-radius: 10px;
+}
+/*Styling for images in blocks*/
+.block-slider img
+{
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    scroll-snap-align: start;
+}
+.block-header
+{
+    font-size: 30;
+    color: rgb(255, 0, 93);
+    padding: 4px 4px 4px;
+    background-color: whitesmoke; 
+}
+@media (max-width: 800px)
+{
+    #grid
+    {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    .block
+    {
+        width: 100%;
+    }
+    .block-header
+    {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 500px)
+{
+    #grid
+    {
+        row-gap: 32px;
+    }
+    .block-text p,
+    .block-footer p
+    {
+        font-size: 14px;
+    }
+    .block-header
+    {
+        font-size: 20px;
+    }
+}
