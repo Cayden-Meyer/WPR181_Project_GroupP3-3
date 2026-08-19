@@ -66,3 +66,36 @@
     padding: 4px 4px 4px;
     background-color: whitesmoke; 
 }
+@media (max-width: 800px)
+{
+    #grid
+    {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    .block
+    {
+        width: 100%;
+    }
+    .block-header
+    {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 500px)
+{
+    #grid
+    {
+        row-gap: 32px;
+    }
+    .block-text p,
+    .block-footer p
+    {
+        font-size: 14px;
+    }
+    .block-header
+    {
+        font-size: 20px;
+    }
+}
